@@ -1,0 +1,30 @@
+- inserire in web-app.properties la proprieta
+  cuba.web.useDeviceWidthForViewport = true
+
+- nel tag window degli screen responsive inserire
+  xmlns:swr="http://strangeway.org/xsd/responsive/sw-responsive.xsd"
+
+- Il componente principale è il ResponsiveLayout
+  <swr:responsiveLayout width="100%">
+
+  </swr:responsiveLayout>
+
+- Dentro il responsiveLayout ci possono essere una o piu righe con all'interno una o piu colonne.
+  Le colonne seguono la regola del 12 specificata del tag  <swr:display />
+  Esempio: <swr:display xs="12" sm="12" md="6" lg="4"/>
+  Spiegazione:
+  nei dispositivi extrsmall e small avremo una colonna in quanto 12:12=1
+  nei dispositivi medium avremo due colonne in quanto 12:6=2
+  nei dispositivi large avremo tre colonne in quanto 12:4=3
+
+  <swr:column>
+      <swr:content>
+          <groupBox caption="Area">
+              <label stylename="big-number"
+                     align="MIDDLE_CENTER"
+                     value="541.382 km^2"/>
+          </groupBox>
+      </swr:content>
+
+      <swr:display xs="12" sm="12" md="6" lg="4"/>
+  </swr:column>

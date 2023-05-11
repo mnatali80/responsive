@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="application-responsive" insertBefore="administration" caption="mainMsg://menu_config.application-responsive">
+        <item screen="responsive_" caption="mainMsg://menu_config.responsive_"/>
+        <item screen="responsive_2" caption="mainMsg://menu_config.responsive_2"/>
+    </menu>
+</menu-config>
